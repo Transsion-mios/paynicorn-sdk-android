@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="初始化"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/btn_sms_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短代支付"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_init"
+        />
+
+    <Button
+        android:id="@+id/btn_online_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线支付"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sms_pay"
+        />
+    <Button
+        android:id="@+id/btn_sub_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线订阅支付"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_online_pay"
+        />
+    <Button
+        android:id="@+id/btn_sub_pay_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线订阅支付查询"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub_pay"
+        />
+    <TextView
+        android:id="@+id/tv_pay_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub_pay_query"
+        android:hint="支付结果："
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_result"
+        android:hint="接入文档地址：https://www.paynicorn.com/docs/client-integration/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%AB%E9%80%9F%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
